@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="login.css">
+      <link rel="shortcut icon" type="image⁄x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
+  </head>
+  <body>
+    <header>
+      <div class="center-align"> <!--가운데 정렬 div-->
+        <div id="header-top" style="font-size:10px;">
+          <span>TFIR을 시작페이지로</span>
+        </div>
+     <div id="header-search" style="clear: both;">
+    <h1>
+      <a href="index.html" >TFIR</a>
+    </h1>
+    <h2 class="blind">검색창</h2>
+    <fieldset>
+      <legend class="blind">검색</legend>
+      <input type="placeholder="입력하세요!" style="vertical-align: top;">
+    </fieldset>
+  </div>
+</div>
+<nav id="topMenu" >
+  <ul> <li class="topMenuLi">
+    <a class="menuLink" href="로봇.html">로봇</a>
+  </li>
+           <li>|</li>
+  <li class="topMenuLi">
+    <a class="menuLink" href="반도체.html">반도체</a>
+  </li>
+         <li>|</li>
+  <li class="topMenuLi">
+    <a class="menuLink" href="인공지능.html">인공지능</a>
+  </li>
+         <li>|</li>
+  <li class="topMenuLi">
+    <a class="menuLink" href="기타사항.html">기타사항</a>
+    <ul class="submenu">
+      <li><a href="기타사항.html" class="submenuLink">건의사항</a></li>
+      <li><a href="후원.html" class="submenuLink">후원</a></li>
+      <li><a href="로그인.html" class="submenuLink">로그인</a></li>
+    </ul>
+    </li>
+  </ul>
+  </nav>
+  </header>
+  <main>
+    <div class="center-align">
+  <form method="post" id="authForm" action="https://www.tistory.com/auth/login"
+  style="width:250px; margin-left:417px; margin-top:50px; margin-bottom: 244px;">
+    <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage">
+    <fieldset>
+      <legend class="screen_out">로그인 정보 입력폼</legend>
+      <div class="box_login">
+        <div class="inp_text" style="margin-bottom:10px;">
+          <label for="loginId" class="screen_out">아이디</label>
+          <input type="email" id="loginId" name="loginId" placeholder="ID" >
+        </div>
+        <div class="inp_text">
+          <label for="loginPw" class="screen_out">비밀번호</label>
+          <input type="password" id="loginPw" name="password" placeholder="Password" >
+        </div>
+      </div>
+      <button type="submit" class="btn_login"  disabled>로그인</button>
+      <div class="login_append">
+        <div class="inp_chk"> <!-- 체크시 checked 추가 -->
+          <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
+          <label for="keepLogin" class="lab_g">
+<span class="img_top ico_check"></span>
+<span class="txt_lab">로그인 상태 유지</span>
+  </label>
+        </div>
+        <span class="txt_find">
+           <a href="/member/find/loginId" class="link_find">아이디</a>
+            /
+           <a href="/member/find/password" class="link_find">비밀번호 찾기</a>
+         </span>
+      </div>
+
+    </fieldset>
+  </form>
+  </div>
+    </main>
+  </body>
+  </html>

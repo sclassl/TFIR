@@ -1,22 +1,116 @@
-h1{ color: #2DB400}
-a { text-decoration:none;
-color: #2DB400;}
+* {
+   user-select: none;
+   -ms-user-select: none;
+   outline: 0;
+   margin: 0;
+   padding: 0;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+     box-sizing: content-box;
+}
+h1{
+  color: #03cf5d;
+  font-size: 40px;
+}
+h2{
+  font-size: 40px;
+}
+a {
+  text-decoration:none;
+  color: #03cf5d;
+}
+.blind{
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+  #header-top{
+    float:right;
+  }
+#header-search a {
+  text-decoration: none;
+}
+#fixed {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.nav{
+  border-bottom: 1px solid black;
+}
+.center-align {
+  margin: 0 auto;
+  width: 1080px;
+}
+main{
+  background-color: #f2f4f7;
+  display: inline-block;
+  width: 100%;
+  margin-top:10px;
+}
+#header-search > h1 {
+  width: 198px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -6px;
+  right: -2px;
+}
+#header-search h2 {
+  display: none;
+}
+#header-search fieldset{
+  margin-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 521px;
+  height: 20px;
+  border: 2px solid #03cf5d;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+#header-search fieldset input {
+  border: none;
+  padding: 0;
+  outline: none;
+  vertical-align: top;
+  width: 510px;
+  height: 23px;
+  display: inline-block;
+}
+
+
 .nav{
   border-bottom: 1px solid black;
 }
 #topMenu {
             border: 1px solid #b8b8b8;
             height: 30px;
-            width: 100%;
+            width: 1080px;
             display:flex;
             justify-content: center;
             position: relative;
-          background-color: #f6f6f6;
+            background-color: #f6f6f6;
+            margin: 0 auto;
+            top:10px;
     }
     #topMenu ul {
-        list-style-type: none;
-        margin: 0px;
-        padding: 0px;
+       list-style-type: none;
+       margin: 0px;
+       padding: 0px;
+       justify-content: center;
+       text-align: center;
     }
     #topMenu ul li {
         color:#b8b8b8;
@@ -55,17 +149,17 @@ color: #2DB400;}
         -margin-right: -1px;
     }
     .submenu {
-        position: absolute;
-        height: 0px;
-        overflow: hidden;
-        transition: height .2s;
-        -webkit-transition: height .2s;
-        -moz-transition: height .2s;
-        -o-transition: height .2s;
-        width: 100%;
-        display:flex;
-        justify-content: center;
-        left: 0;
+       position: absolute;
+       height: 0px;
+       overflow: hidden;
+       transition: height .2s;
+       -webkit-transition: height .2s;
+       -moz-transition: height .2s;
+       -o-transition: height .2s;
+       width: 1080px;
+       display:flex;
+       justify-content: center;
+       left: 0;
 
 
         background-color: #f6f6f6;
@@ -82,82 +176,18 @@ color: #2DB400;}
         color: #2DB400;
         background-color:#f6f6f6;
     }
-    h1{ color: #2DB400}
-#topMenu {
-            border: 1px solid #b8b8b8;
-            height: 30px;
-            width: 100%;
-            display:flex;
-            justify-content: center;
-            position: relative;
-          background-color: #f6f6f6;
-    }
-    #topMenu ul {
-        list-style-type: none;
-        margin: 0px;
-        padding: 0px;
-    }
-    #topMenu ul li {
-        color:#b8b8b8;
-        background-color: #f6f6f6;
-        float: left;
-        line-height: 30px;
-        vertical-align: middle;
-        text-align: center;
-        -position: relative;
-    }
-    .menuLink, .submenuLink {
-        text-decoration:none;
-        display: block;
-        width: 150px;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: "Trebuchet MS", Dotum;
-        color: #2DB400;
-
-    }
-    .menuLink {
-        color:#2DB400;
-    }
-    .topMenuLi:hover .menuLink {
-        color: #2DB400;
-        background-color: #f6f6f6;
-
-    }
-    .longLink {
-        width: 190px;
-    }
-.submenuLink {
-        color: #2d2d2d;
-        background-color: #f6f6f6;
-        -border: solid 1px #b8b8b8;
-        -margin-right: -1px;
-    }
-    .submenu {
-        position: absolute;
-        height: 0px;
-        overflow: hidden;
-        transition: height .2s;
-        -webkit-transition: height .2s;
-        -moz-transition: height .2s;
-        -o-transition: height .2s;
-        width: 100%;
-        display:flex;
-        justify-content: center;
-        left: 0;
-
-
-        background-color: #f6f6f6;
-    }
-    .submenu li {
-        display: inline-block;
-
-
-    }
-    .topMenuLi:hover .submenu {
-        height: 32px;
-    }
-    .submenuLink:hover {
-        color: #2DB400;
-        background-color:#f6f6f6;
-    }
+#제목{
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+.subtitle{
+  border: 1px solid #ccc;
+    display: inline-block;
+    padding: 12px 20px 18px 0;
+    margin-left: 5px;
+}
+.table1{
+  margin-bottom: 8px;
+  border-bottom: 1px solid black;
+}

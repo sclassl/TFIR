@@ -171,81 +171,10 @@ main{
         color: #2DB400;
         background-color:#f6f6f6;
     }
-   .title {
-     margin: 10px;
-     text-align: center;
-     font-size: 60px;
-     font-weight: 500px;
-   }
-   .subtitle{
-      text-align: center;
-     font-size: 40px;
-     font-weight: 300px;
-     margin-bottom: 10px; /*추가한것.*/
-   }
-  #main-centered {
-    padding: 8px; 10px; 0;
-    width: 1080px;
-  }
-  #main-first-block{
-    display: inline-block;
-    width: 100%;
-  }
-  #first {
-    float: left;
-    width: 536px;
-    height: 240px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    border: 1px solid black;
-    border-radius: 1px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-  }
-  #second {
-    float: left;
-    width: 532px;
-    height: 240px;
-    border: 1px solid black;
-    margin-bottom: 8px;
-    vertical-align: top;
-    border-radius: 1px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-  }
-  #third {
-    display: inline-block;
-    width: 1080px;
-    height: 240px;
-    border: 1px solid black;
-    margin-bottom: 8px;
-    border-radius: 1px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-  }
-  #fourth{
-    display: inline-block;
-    width: 1080px;
-    height: 240px;
-    border: 1px solid black;
-    margin-bottom: 8px;
-    border-radius: 1px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-  }
-  #main-logo {
-    display: inline-block;
-    width: 300px;
-    height: 240px;
-    margin-right: 150px;
-  }
-  #main-youtube {
-    display: inline-block;
-    width: 540px;
-    height: 240px;
-    margin-left: 65px;
-  }
+#건의사항제목{
+  margin-top:10px;
+}
+#건의사항{
+  margin-top: 51px;
+  margin-bottom: 100px;
+}
