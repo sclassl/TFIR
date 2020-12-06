@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="center-align"> <!--가운데 정렬 div-->
-        <div id="header-top" style="font-size:10px;">
+        <div id="header-top" style="font-size:13px;">
           <span>TFIR을 시작페이지로</span>
         </div>
      <div id="header-search" style="clear: both;">
@@ -70,6 +70,16 @@
 </form>
   </div>
 </main>
-
+<div class="loader">
+  <br>
+  <h3>TFIR</h3>
+  <br>
+  <h5>The Fourth <br>Industrial Revolution</h5>
+</div>
+<script>
+  $(window).load(function(){
+    $('.loader').delay(200).fadeOut();
+  });
+</script>
   </body>
 </html>
