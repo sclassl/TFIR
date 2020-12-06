@@ -101,9 +101,8 @@ main{
             display:flex;
             justify-content: center;
             position: relative;
-            background-color: #f6f6f6;
+            background-color: #ffffff;
             margin: 0 auto;
-            top:10px;
     }
     #topMenu ul {
        list-style-type: none;
@@ -114,7 +113,7 @@ main{
     }
     #topMenu ul li {
         color:#b8b8b8;
-        background-color: #f6f6f6;
+        background-color: #ffffff;
         float: left;
         line-height: 30px;
         vertical-align: middle;
@@ -136,7 +135,7 @@ main{
     }
     .topMenuLi:hover .menuLink {
         color: #2DB400;
-        background-color: #f6f6f6;
+        background-color: #ffffff;
 
     }
     .longLink {
@@ -144,7 +143,7 @@ main{
     }
 .submenuLink {
         color: #2d2d2d;
-        background-color: #f6f6f6;
+        background-color: #ffffff;
         -border: solid 1px #b8b8b8;
         -margin-right: -1px;
     }
@@ -162,7 +161,7 @@ main{
        left: 0;
 
 
-        background-color: #f6f6f6;
+        background-color: #ffffff;
     }
     .submenu li {
         display: inline-block;
@@ -174,5 +173,5 @@ main{
     }
     .submenuLink:hover {
         color: #2DB400;
-        background-color:#f6f6f6;
+        background-color:#ffffff;
     }

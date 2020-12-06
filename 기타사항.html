@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="styleetc.css">
+    <script src=http://code.jquery.com/jquery-latest.js>
+    </script>
+    <link rel="stylesheet" href="style.css">
           <link rel="shortcut icon" type="image⁄x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
   </head>
   <body>
@@ -53,20 +55,31 @@
   </nav>
       </header>
       <main>
-  <div class="center-align" style="">
-    <div id="건의사항제목" style="margin-top:10px;">
-      <h3>건의사항이 있다면 적어주세요!</h3>
-    </div>
-    <div id="건의사항" style="margin-top: 51px;
-      margin-bottom: 100px;">
-      <form action="/action_page.php" style="">
-  <label for="fname">이름:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">건의:</label>
-  <input type="text" style="width:300px;" id="lname" name="lname"><br><br>
-  <input type="submit" value="제출">
+<div class="center-align" style="">
+  <div id="건의사항제목" style="margin-top:10px;">
+    <h3>건의사항이 있다면 적어주세요!</h3>
+  </div>
+  <div id="건의사항" style="margin-top: 51px;
+    margin-bottom: 100px;">
+    <form action="/action_page.php" style="">
+<label for="fname">이름:</label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">건의:</label>
+<input type="text" style="width:300px;" id="lname" name="lname"><br><br>
+<input type="submit" value="제출">
 </form>
-    </div>
-  </main>
+  </div>
+</main>
+<div class="loader">
+  <br>
+  <h3>TFIR</h3>
+  <br>
+  <h5>The Fourth <br>Industrial Revolution</h5>
+</div>
+<script>
+  $(window).load(function(){
+    $('.loader').delay(200).fadeOut();
+  });
+</script>
   </body>
 </html>

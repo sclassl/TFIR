@@ -7,17 +7,29 @@
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
      box-sizing: content-box;
 }
+.loader {
+  position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 100%;
+height: 100%;
+background-color: #f3f3f3;
+font-size: 150px;
+font-family: "Trebuchet MS", Dotum;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%,-50%) rotate(0deg); }
+  100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+
 h1{
   color: #03cf5d;
-  font-size: 40px;
+  font-size: 50px;
 }
-h2{
-  font-size: 40px;
-}
-a {
-  text-decoration:none;
-  color: #03cf5d;
-}
+a { text-decoration:none;
+color: #03cf5d;}
 .blind{
   position: absolute;
   overflow: hidden;
@@ -50,19 +62,19 @@ a {
   width: 1080px;
 }
 main{
-  background-color: #f2f4f7;
+  background-color: #ffffff;
   display: inline-block;
   width: 100%;
-  margin-top:10px;
+  margin-top:15px;
 }
 #header-search > h1 {
   width: 198px;
-  height: 48px;
+  height: 160px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  top: -6px;
-  right: -2px;
+  top: 42px;
+  right: -22px;
 }
 #header-search h2 {
   display: none;
@@ -89,8 +101,6 @@ main{
   height: 23px;
   display: inline-block;
 }
-
-
 .nav{
   border-bottom: 1px solid black;
 }
@@ -101,9 +111,8 @@ main{
             display:flex;
             justify-content: center;
             position: relative;
-            background-color: #f6f6f6;
+            background-color: #ffffff;
             margin: 0 auto;
-            top:10px;
     }
     #topMenu ul {
        list-style-type: none;
@@ -114,7 +123,7 @@ main{
     }
     #topMenu ul li {
         color:#b8b8b8;
-        background-color: #f6f6f6;
+        background-color: #ffffff;
         float: left;
         line-height: 30px;
         vertical-align: middle;
@@ -136,7 +145,7 @@ main{
     }
     .topMenuLi:hover .menuLink {
         color: #2DB400;
-        background-color: #f6f6f6;
+        background-color: #ffffff;
 
     }
     .longLink {
@@ -144,7 +153,7 @@ main{
     }
 .submenuLink {
         color: #2d2d2d;
-        background-color: #f6f6f6;
+        background-color: #ffffff;
         -border: solid 1px #b8b8b8;
         -margin-right: -1px;
     }
@@ -162,7 +171,7 @@ main{
        left: 0;
 
 
-        background-color: #f6f6f6;
+        background-color: #ffffff;
     }
     .submenu li {
         display: inline-block;
@@ -174,7 +183,7 @@ main{
     }
     .submenuLink:hover {
         color: #2DB400;
-        background-color:#f6f6f6;
+        background-color:#ffffff;
     }
 #제목{
   text-align: left;

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src=http://code.jquery.com/jquery-latest.js>
+    </script>
       <link rel="stylesheet" href="login.css">
       <link rel="shortcut icon" type="image⁄x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
   </head>
@@ -49,40 +51,47 @@
   </header>
   <main>
     <div class="center-align">
-  <form method="post" id="authForm" action="https://www.tistory.com/auth/login"
-  style="width:250px; margin-left:417px; margin-top:50px; margin-bottom: 244px;">
-    <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage">
-    <fieldset>
-      <legend class="screen_out">로그인 정보 입력폼</legend>
-      <div class="box_login">
-        <div class="inp_text" style="margin-bottom:10px;">
-          <label for="loginId" class="screen_out">아이디</label>
-          <input type="email" id="loginId" name="loginId" placeholder="ID" >
-        </div>
-        <div class="inp_text">
-          <label for="loginPw" class="screen_out">비밀번호</label>
-          <input type="password" id="loginPw" name="password" placeholder="Password" >
-        </div>
-      </div>
-      <button type="submit" class="btn_login"  disabled>로그인</button>
-      <div class="login_append">
-        <div class="inp_chk"> <!-- 체크시 checked 추가 -->
-          <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
-          <label for="keepLogin" class="lab_g">
-<span class="img_top ico_check"></span>
-<span class="txt_lab">로그인 상태 유지</span>
-  </label>
-        </div>
-        <span class="txt_find">
-           <a href="/member/find/loginId" class="link_find">아이디</a>
-            /
-           <a href="/member/find/password" class="link_find">비밀번호 찾기</a>
-         </span>
+    <div class="row" style="
+    margin-top: 17px;
+">
+    <div class="side">
+
+    </div>
+    <div class="main">
+      <div class="h2">
+        <h2>로그인</h2>
       </div>
 
-    </fieldset>
-  </form>
+      <div class="container">
+        <label for="uname"><b>아이디</b></label>
+        <input type="text" placeholder="아이디를 입력하세요" name="uname" required>
+
+        <label for="psw"><b>비밀번호</b></label>
+        <input type="password" placeholder="비밀번호를 입력하세요" name="psw" required>
+        <button type="submit">로그인</button>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+            <span class="psw"><a href="#">회원가입</a> </span><br></br>
+        <span class="psw">찾기: <a href="#">아이디</a>/<a href="#">비밀번호</a></span><br></br>
+        <button type="button" class="cancelbtn">취소</button>
+      </div>
+    </div>
+    <div class="other">
+    </div>
   </div>
+</div>
     </main>
+    <div class="loader">
+      <br>
+      <h3>TFIR</h3>
+      <br>
+      <h5>The Fourth <br>Industrial Revolution</h5>
+    </div>
+    <script>
+      $(window).load(function(){
+        $('.loader').delay(200).fadeOut();
+      });
+    </script>
   </body>
   </html>

@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src=http://code.jquery.com/jquery-latest.js>
+    </script>
     <link rel="stylesheet" href="style.css">
           <link rel="shortcut icon" type="image⁄x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
   </head>
   <body>
+
     <header>
+      <div class="">
       <div class="center-align"> <!--가운데 정렬 div-->
-        <div id="header-top" style="font-size:10px;">
+        <div id="header-top" style="font-size:13px;">
           <span>TFIR을 시작페이지로</span>
         </div>
      <div id="header-search" style="clear: both;">
@@ -26,18 +30,28 @@
 <nav id="topMenu" >
   <ul> <li class="topMenuLi">
     <a class="menuLink" href="로봇.html">로봇</a>
+    <ul class="submenu">
+      <li><a href="로봇.html.#a1" class="submenuLink">로봇의 정의</a></li>
+      <li><a href="로봇.html.#a2" class="submenuLink">로봇의 종류</a></li>
+      <li><a href="로봇.html.#a3" class="submenuLink">관련 직업</a></li>
+    </ul>
   </li>
            <li>|</li>
   <li class="topMenuLi">
     <a class="menuLink" href="반도체.html">반도체</a>
+    <ul class="submenu">
+      <li><a href="반도체.html.#a1" class="submenuLink">반도체의 정의</a></li>
+      <li><a href="반도체.html.#a2" class="submenuLink">반도체의 종류</a></li>
+      <li><a href="반도체.html.#a3" class="submenuLink">관련 직업</a></li>
+    </ul>
   </li>
          <li>|</li>
   <li class="topMenuLi">
     <a class="menuLink" href="인공지능.html">인공지능</a>
     <ul class="submenu">
       <li><a href="인공지능.html.#a1" class="submenuLink">인공지능의 정의</a></li>
-      <li><a href="인공지능.html.#a2" class="submenuLink">인공지능의 유래</a></li>
-      <li><a href="인공지능.html.#a3" class="submenuLink">인공지능의 종류</a></li>
+      <li><a href="인공지능.html.#a2" class="submenuLink">인공지능의 종류</a></li>
+      <li><a href="인공지능.html.#a3" class="submenuLink">관련 직업</a></li>
     </ul>
   </li>
          <li>|</li>
@@ -53,6 +67,31 @@
   </nav>
       </header>
       <main>
+        <input type="checkbox" id="menuicon">
+    <ul>
+	   <li>
+		<label for="menuicon">
+			<span></span><span></span><span></span>
+		</label>
+	</li>
+</ul>
+<div class="sidebar" style="text-align: center;">
+    <div>
+      <img src="logo.jpg" alt="">
+    </div>
+  <div>
+      이 페이지는 서현고등학교 <br>2학년 7반 6번 김준형 <br> 2학년 7반 7번 김민준 <br> 2학년 7반 12번 이준 <br> 이 제작한 사이트 입니다.
+      <br><br><br> <a href="www.w3schools.com">W3School</a>와 <a href="www.naver.com">네이버</a>를 참고하였으며
+      <br><br><br> <a href="https://www.youtube.com/c/%EC%BD%94%EB%82%A8/">유튜브-코딩하는남자</a><br>
+      <a href="https://www.youtube.com/user/cmiscm">유튜브-Interactive Developer</a>
+      <br>참고하였습니다.<br><br><br>
+      페이지를 만든 동기는 다가오는 <br>4차 산업혁명에 대해서 <br>더 잘 알고 싶었으며 <br> 다가오는 4차 산업혁명에 각광받는 <br>여러가지 기술들에 대해서 <br>잘 알고 싶었기 때문입니다.
+      <br> 또한 3명의 진로가 4차 산업혁명과 관련된 것이였기 때문입니다.<br><br><br><br>
+    </div>
+    <div>
+      <img src="logoo.png" alt="">
+    </div>
+</div>
       <div id= "main-centered" class="center-align">
       <div class="title">
         TFIR
@@ -64,26 +103,49 @@
      <div>
        <div id="first">
       <br><h2>1차 산업혁명</h2>
-       <br><br><br>1차 산업혁명은 약 200여년전 증기기관이 등장하고 <br>공장이 생기고 공업이 시작되면서 시작되었습니다. <br>인간의 노동을 기계가 대신 하기 시작하면서 이루어 진 것 입니다. <br>석탄이 주 에너지원으로 이용된 시기라고 할 수 있습니다.
+      <div class="content">
+       <br><br><br>1차 산업혁명은 약 200여년전 <span class="highlight">증기기관</span>이 등장하고 <br><span class="highlight">공장</span>이 생기고 <span class="highlight">공업</span>이 시작되면서 시작되었습니다. <br>인간의 노동을
+       <span class="highlight">기계</span>가 대신 하기 시작하면서 이루어 진 것 입니다. <br>
+       <span class="highlight">석탄</span>이 주 에너지원으로 이용된 시기라고 할 수 있습니다.
+     </div>
      </div>
        <div id="second">
          <Br><h2>2차 산업혁명</h2>
-         <br><br><br>2차 산업혁명은 화학, 전기. 석유 및 철강 분야에서 <br>기술 혁신이 진행되었습니다. <br>소비재를 대량 생산하는 구조적 측면의 발전도 있었고, <br>식료품 및 음료, 의류 등의 제조 기계와 더불어 가공, <br>운송 수단의 혁신에서도 기여를 했습니다.
+           <div class="content">
+         <br><br><br>2차 산업혁명은 화학, 전기, 석유 및 철강 분야에서 <br><span class="highlight">기술 혁신</span>이 진행되었습니다. <br>소비재를 대량 생산하는 구조적 측면의 발전도 있었고,
+         <br>식료품 및 음료, 의류 등의 <span class="highlight">제조 기계</span>와 더불어 <span class="highlight">가공</span>, <br><span class="highlight">운송 수단</span>의 혁신에서도 기여를 했습니다.
+       </div>
        </div>
      </div>
      </div>
      <div>
        <div id="third">
+         <div class="content">
        <br><br><h2>3차 산업혁명</h2>
-       <br><br><br>3차 산업혁명은 반도체와 컴퓨터, 인터넷 혁명으로 정보의 생성, 가공, 공유를 가능케 하는 정보기술시대입니다. <br>1차 산업혁명이 진화하여서 2차 산업혁명이 기술혁명으로 이어졌다면 <br>3차 산업혁명은 과학과 기술이 일체화된 과학기술 혁명이 전개됩니다.
+       <br><br><br>3차 산업혁명은 <span class="highlight">반도체</span>와  <span class="highlight">컴퓨터</span>,  <span class="highlight">인터넷</span> 혁명으로
+       <br>정보의 생성, 가공, 공유를 가능케 하는  <span class="highlight">정보기술시대</span>입니다.
+       <br>1차 산업혁명이 진화하여서 2차 산업혁명이 기술혁명으로 이어졌다면 <br>3차 산업혁명은 과학과 기술이 일체화된  <span class="highlight">과학기술혁명이 전개됩니다.
        </div>
+     </div>
     </div>
     <div>
+      <div id="third-picture">
+        <img src="3차 산업혁명.jpg" alt="">
+      </div>
+   </div>
+    <div>
        <div id="fourth">
+            <div class="content">
          <br><br><h2>4차 산업혁명</h2>
-         <br><br><br>4차 산업혁명은 이러한 기술들이 주도하는 차세대 산업혁명을 말합니다. <br>로봇이나 인공지능을 통해 실제와 가상이 통합돼 사물을 자동적,지능적으로 제어할 수 있는 <br>가상 물리 시스템의 구축이 기대되는 산업상의 변화를 일컫는 말입니다.
+         <br><br><br>4차 산업혁명은 이러한 기술들이 주도하는 <span class="highlight">차세대</span> <span class="highlight">산업혁명</span>을 말합니다. <br><span class="highlight">로봇</span>이나 <span class="highlight">인공지능</span>을 통해 실제와 가상이 통합돼
+         사물을 <span class="highlight">자동적,지능적</span>으로 제어할 수 있는 <br>가상 물리 시스템의 구축이 기대되는 산업상의 변화를 일컫는 말입니다.
        </div>
-
+     </div>
+    </div>
+    <div>
+       <div id="fourth-picture">
+         <img src="4차 산업혁명.png" alt="">
+       </div>
     </div>
     <div>
        <div id="main-logo">
@@ -94,6 +156,17 @@
        </div>
     </div>
     </div>
+    <div class="loader">
+      <br>
+      <h3>TFIR</h3>
+      <br>
+      <h5>The Fourth <br>Industrial Revolution</h5>
+    </div>
+    <script>
+      $(window).load(function(){
+        $('.loader').delay(1000).fadeOut();
+      });
+    </script>
    </main>
  </body>
  </html>
